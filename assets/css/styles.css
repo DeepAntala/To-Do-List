@@ -1,0 +1,124 @@
+
+*{
+
+	font-family: "Source Sans Pro", Century Gothic;
+}
+
+body{
+
+	/*background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(../todos.jpg);*/
+	background: #2c3e50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.addtodo{
+	display: flex;
+    justify-content: space-between;
+}
+
+
+button{
+	background: white;
+	border:none;
+	color: black;
+	padding: 0 16px 0 16px;
+	font-size: 1em;
+	cursor: pointer;
+}
+input{
+	width: 90%;
+	height: 40px;
+	box-sizing: border-box;
+	border:none;
+	padding: 13px 13px 13px 20px;
+	font-size: 14px;
+}
+
+span{
+	float: right;
+	/*margin-left: 20px;*/
+	/*margin-right: 20px;*/
+	background:rgb(237, 71, 45);
+	color:white;
+	display: inline-block;
+	width: 0;
+	text-align: center;
+	height: 40px;
+	/*transition: 2s linear;*/
+	opacity: 0;
+	/*align-items: right;*/
+
+}
+
+li:hover span{	
+	width: 40px;
+	transition: 0.6s ease-in-out;
+	opacity: 1;
+}
+
+.fa-plus{
+	float: right;
+	padding-top: 4px;
+	padding-right: 4px;
+}
+
+
+h1{
+	background: rgb(41, 128, 185);
+	margin: 0;
+	padding: 6px;
+	color: rgb(240, 243, 245);
+	text-transform: uppercase;
+	font-size: 28px;
+
+}
+
+li{
+
+	height: 40px;
+	line-height: 40px;
+	/*padding-left: 13px;*/
+	/*padding-right: 20px;*/
+}
+
+ul{
+
+	list-style: none;
+	margin:0;
+	padding-left: 15px;
+}
+
+li:nth-child(2n){
+	background:white;	
+}
+
+#container{
+	-webkit-box-shadow: -2px 1px 5px 0px rgba(0,0,0,1);
+	-moz-box-shadow: -2px 1px 5px 0px rgba(0,0,0,1);
+	box-shadow: -2px 1px 5px 0px rgba(0,0,0,1);
+	width: 360px;
+	margin: 150px auto;
+	background: rgba(248, 248, 248);
+
+}
+
+.checkout{
+	color: gray;
+	text-decoration: line-through;
+}
+
+footer{
+	position: fixed;
+	text-align: center;
+	left: 0;
+  	bottom: 1em;
+  	width: 100%;
+	color: white;
+}
+
+.fa-heart{
+	color: red;
+
+}
