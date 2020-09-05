@@ -80,7 +80,6 @@ function deleteItem(item){
 		else{
 			items = JSON.parse(localStorage.getItem('items'));
 		}	
-		console.log(items.indexOf(item));
 		items.splice(items.indexOf(item), 1);
 
 		localStorage.setItem('items', JSON.stringify(items));
