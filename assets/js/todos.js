@@ -21,7 +21,6 @@ function del(e){
 
 $("ul").on("click", "span", function(e){
 	const item=$(this).parent()[0].lastChild.data;
-	
 	$(this).parent().fadeOut(400, function(){
 	$(this).remove();
 	});
